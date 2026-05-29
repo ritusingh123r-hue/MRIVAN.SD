@@ -1,0 +1,6 @@
+{
+  "name": "MRIVAN AI",
+  "description": "Your Personal AI Teacher for Every Subject. MRIVAN AI explains textbooks, generates notes, creates exams, and tracks progress.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

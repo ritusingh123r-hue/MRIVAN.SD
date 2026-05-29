@@ -1,0 +1,43 @@
+{
+  "short_name": "MRIVAN AI",
+  "name": "MRIVAN AI - Personal AI Teacher",
+  "description": "Your Personal AI Teacher for Every Subject. MRIVAN AI explains textbooks, generates notes, creates exams, and tracks progress.",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#090d16",
+  "theme_color": "#4f46e5",
+  "display": "standalone",
+  "orientation": "portrait",
+  "categories": ["education", "productivity"],
+  "shortcuts": [
+    {
+      "name": "AI Tutor Chat",
+      "short_name": "Chat",
+      "url": "/?tab=chat",
+      "description": "Chat with your AI Teacher"
+    },
+    {
+      "name": "Practice Exams",
+      "short_name": "Exams",
+      "url": "/?tab=exams",
+      "description": "Take full-syllabus assessments"
+    }
+  ]
+}

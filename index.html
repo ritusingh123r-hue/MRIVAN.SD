@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>MRIVAN AI - Personal AI Teacher</title>
+    
+    <!-- PWA & Play Store Optimization Tags -->
+    <meta name="theme-color" content="#090d16" />
+    <meta name="background-color" content="#090d16" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    
+    <!-- Mobile Standalone Web App Meta Tags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="MRIVAN AI" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <!-- Splash Screen Link for iOS/Android if applicable -->
+    <link rel="apple-touch-icon" href="/icon.svg" />
+  </head>
+  <body class="bg-[#090d16] text-slate-100">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    
+    <!-- Register Service Worker for PWA / Play Store Compliance -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/service-worker.js')
+            .then((registration) => {
+              console.log('MRIVAN AI PWA Service Worker registered successfully:', registration.scope);
+            })
+            .catch((error) => {
+              console.error('MRIVAN AI PWA Service Worker registration failed:', error);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
